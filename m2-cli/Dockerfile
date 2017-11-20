@@ -1,8 +1,11 @@
-FROM php:7-fpm 
+FROM php:7
 
 MAINTAINER Daniel Coull <ttechitsolutions@gmail.com>
 
-RUN apt-get update
+RUN apt-get update && apt-get install mysql-client -y
+
+RUN docker-php-ext-install pdo 
+RUN docker-php-ext-install pdo_mysql
 
 RUN curl http://files.magerun.net/n98-magerun-latest.phar -o /n98-magerun.phar
 RUN chmod +x /n98-magerun.phar
