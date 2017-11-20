@@ -1,4 +1,4 @@
-FROM php-7
+FROM php:7-fpm 
 
 MAINTAINER Daniel Coull <ttechitsolutions@gmail.com>
 

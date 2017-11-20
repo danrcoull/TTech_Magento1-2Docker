@@ -15,8 +15,6 @@ services:
         - php
         - mariadb:mysql
         - redis
-    environment:
-        VIRTUAL_HOST: www.radio-solutions.local
 
   magerun:
     build: m2-cli
