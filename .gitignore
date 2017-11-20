@@ -1,0 +1,5 @@
+database/
+.idea
+
+web/media
+web/var
